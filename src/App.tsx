@@ -20,6 +20,7 @@ function App() {
             <Data />
           </PageWrapper>
         } />
+   
       </Routes>
     </div>
   )
