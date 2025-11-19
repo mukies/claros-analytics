@@ -1,7 +1,7 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "../../store/hooks";
 import { closeSidebar } from "../../store/slices/sidebarSlice";
-import { Database, Home } from "lucide-react";
+import { ChartColumnBig, Home } from "lucide-react";
 
 
 const Sidebar = () => {
@@ -12,9 +12,8 @@ const Sidebar = () => {
 
   const navItems = [
     { id: '/', label: 'Home', icon: <Home size={20} /> },
-    { id: '/data', label: 'Data', icon: <Database size={20} /> },
+    { id: '/data', label: 'Data', icon: <ChartColumnBig size={20} /> },
   ] as const;
-
   const handleNavClick = (page: 'home' | 'data') => {
     navigate(page)
   };

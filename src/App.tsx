@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom"
 import Home from "./pages/Home"
 import { PageWrapper } from "./components/global/PageWrapper"
 import Data from "./pages/Data"
+import NotFound from "./pages/NotFound"
 
 
 function App() {
@@ -20,7 +21,9 @@ function App() {
             <Data />
           </PageWrapper>
         } />
-   
+         <Route path="*" element={
+         <NotFound/>
+        } />
       </Routes>
     </div>
   )
